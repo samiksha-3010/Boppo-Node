@@ -4,9 +4,7 @@ import mongoose from "mongoose";
 import { Login, Register, getCurrentUser } from "./Controolers/userControolers.js";
 import { addProduct, createCategory, deleteproduct, getAllCategories, getByHandle, update } from "./Controolers/Product.controolers.js";
 
-// import cors from 'cors'
-//  import morgan from "morgan"
-//  import routesIndex from './routes/index.js'
+
 
 
 
@@ -31,7 +29,7 @@ app.delete("/deleteproduct", deleteproduct);
 app.post("/createCategory ", createCategory );
 app.get("/getAllCategories", getAllCategories);
 
-// app.use(/'api/v1',routesIndex)
+// app.use(/'api/v1',routesIndex
 
 
 mongoose.connect(process.env.Mongo_URL).then(()=>{

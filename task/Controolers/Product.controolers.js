@@ -1,6 +1,7 @@
 import ProductModal from "../Modal/Product.modal.js";
 
 export const addProduct = async(req,res) =>{
+      b
       try {
             const { name, price, image, category, description} = req.body;
             const {token}  = req.body;
